@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<Pattern>[%d{yyyy-MM-dd HH:mm:ss}] %-5level %logger{36} - %msg%n</Pattern>
+		</encoder>
+	</appender>
+
+	<logger name="org.springframework" level="info" />
+	<logger name="org.springframework.web" level="debug" />
+
+	<logger name="org.hibernate" level="info" />
+	<logger name="org.thymeleaf" level="info" />
+
+	<logger name="com.sil.docsflow" level="debug" />
+	<logger name="com.sil.silapps" level="debug" />
+
+	<root level="debug">
+		<appender-ref ref="STDOUT" />
+	</root>
+
+</configuration>
